@@ -1,0 +1,69 @@
+name: sign_it
+description: A sign language interpretation app
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  camera: ^0.10.5+5
+  image_picker: ^1.0.4
+  path_provider: ^2.1.1
+  permission_handler: ^11.0.1
+  google_fonts: ^6.1.0
+  video_player: ^2.7.2
+  tflite_flutter: ^0.10.4
+  provider: ^6.0.5
+  flutter_localizations:
+    sdk: flutter
+  #razorpay_flutter: ^1.3.5
+  intl_phone_field: ^3.0.0
+  http: ^1.2.2
+  #firebase_admin: ^0.3.0
+  #firebase_core: ^3.6.0
+  #firebase_auth: ^5.3.1
+  #cloud_firestore: ^5.4.4
+  shared_preferences: ^2.2.2 
+  google_maps_flutter: ^2.5.3
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.0
+  logger: ^2.0.2+1
+  geolocator: ^10.1.0
+  
+
+
+shared_preferences_android:
+path: ./relative/path/to/shared_preferences_android
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  # assets:
+  #   - assets/
+  #   - assets/models/
+
+android:
+  app:
+    src:
+      main:
+        res:
+          mipmap-hdpi:
+            ic_launcher.png: 'images/appicon.png'
